@@ -7,91 +7,78 @@
 
         <link rel="stylesheet" href="style.css">
         <style>
-                    nav{
-            background-color: white;
-            position: sticky;
-            top: 0px;
+        nav{
+        position: sticky;
+            
+        
         }
-            div{
-            background-color: rgb(166, 205, 239);
-            width: 70%;
-            height: 70%;
-            border: solid thin black;
-            padding: 20px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-right: 100px;
-            }
             body{
                 background-image: url("CSS.jpg");
 
             }
-        p{
-            font-size: 24px;
-            font-weight: bold;
-        }
-        a{
-            color:blue;
-            font-size: 22px;
-        }
-        a:hover{
-            color: lightblue;
-        }
-        .box{
-            height: 500px;
-            width: 500px;
-            border: 5px solid black;
-            margin: 20px auto;
-            position:relative;
-        }
-        .box1, .box2{
-            height: 150px;
-            width: 150px;
-        }
-        .box1{
-            background-color: grey;
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-        }
-        .box2{
-            background-color: blueviolet;
-            position:fixed;
-            bottom: 0px;
-            right: 250px;
-        }
+            img{
+                height: 20%;
+                width: 20%;
+                display: block;
+                margin-top: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 20px black;
+            }
+            p{
+                font-size: 36px;
+                color: rgb(24, 23, 23);
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 22px;
 
+            }
+            .active{
+                background-color: rgb(43, 60, 132);
+
+            }
+            ul{
+                list-style-type: none;
+                
+            }
+            li{
+                padding: 10px;
+                display: inline-block;
+            }
+            li a{
+                padding: 10px 16px;
+            }
+            .b{
+                display: block;
+                margin: auto;
+                color: white;
+                background-color: rgb(82, 168, 184);
+                height: 40px;
+                width: 75px;
+                font-size: 22px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px black;
+            }
+            button:hover{
+                background-color: rgb(56, 116, 127);
+            }
         </style>
 
     </head>
     <body dir="rtl">
         <nav>
             <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>contact</li>
+                <li><a class="active"href="#">الصفحة الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#">تفاصيل الدورة</a></li>
             </ul>
         </nav>
-        <h1>دورة لتعلم CSS</h1>
-        <div>سوف نتعلم في هذه الدورة عن CSS وفائدتها في تنسيق
-            صفحات الويب, يسهل للمستخدمين طرق التعامل مع المواقع.
-            هناك خصائص عديدة في CSS و سوف نتعلم تفاصيل و طرق استخدام تلك الخصائص في هذه الدورة
-        </div>
-        <div class="box">
-            <div class="box1"></div>
-            <div class="box2"></div>
-        </div>
-        <p>random paraghraph - random paraghraph random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-            random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - random paraghraph - 
-        </p>
-        <a href="https://www.google.com/">اضغط هنا للانتقال إلى الرابط</a>
+        <img src="logo.png" alt="">
+        <p>دورة لتعلم CSS</p>
+        <button class="b">انضمام</button>
     </body>
 </html>
